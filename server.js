@@ -56,7 +56,7 @@ const authenticateToken = (req, res, next) => {
 };
 
 // Registratie
-app.post('/register', async (req, res) => {
+app.post('/register', async (req, res) => { https://lease-middleware.onrender.com/register });
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
     const user = new User({
         name: req.body.name,
