@@ -16,7 +16,6 @@ mongoose.connect(process.env.MONGO_URI, {
     tlsAllowInvalidCertificates: true // Onveilige certificaten toestaan (tijdelijke oplossing)
 });
 
-});
 
 // Gebruikers Schema
 const UserSchema = new mongoose.Schema({
